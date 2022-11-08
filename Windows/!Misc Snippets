@@ -1,0 +1,89 @@
+AT SOME POINT ILL ORGANIZE THESE AND SEPARATE THEM INTO THEIR OWN FOLDER/FILE; right now im just trying to find all my tools/scripts that are spread across like 5 devices/platforms
+
+
+== Restore Points ==
+To create restore point:
+Wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "My Restore Point", 100, 12
+
+To show previous restore points:
+vssadmin List Shadows
+==
+
+== File Share ==
+net share mark=c:\Users\mlampe /GRANT:Everyone,FULL
+==
+
+
+=
+sort tasklist by memory use:
+tasklist | sort /memory /type /R /+35
+
+sort tasklist alphabetically:
+tasklist | sort 
+
+
+whoami && exit
+
+=
+
+ipconfig /flushdns && netsh int ip reset c:\resetlog.txt && netsh int ip reset && netsh advfirewall reset netsh interface ipv4 reset && netsh interface ipv6 reset && netsh interface tcp reset && netsh int reset all && netsh winsock reset && ipconfig /flushdns && 
+
+=
+
+2022 veeam:
+=
+
+Check open port: Test-NetConnection -ComputerName "veeamproxy01" -Port 9621
+or
+telnet hostname 80
+
+
+
+Del /S /F /Q %Windir%\Temp && Del /S /F /Q %localappdata%\Temp
+
+
+net stop Umbrella_RC /y && netsh interface ip set dns "Ethernet" dhcp && net start Umbrella_RC
+net stop Umbrella_RC /y && netsh interface ipv4 set dns name=”Local Area Network” dhcp && net start Umbrella_RC
+
+
+netstat -an |find /i "listening"
+netstat -an |find /i "1443"
+=
+=
+
+
+==
+
+netstat -an |find /i "listening"
+
+
+
+
+slmgr.vbs /dli or /dlv - show current license
+slmgr.vbs /ato - attempt activation with whats in registry
+slmgr.vbs /cpky - clear key from registry
+slmgr.vbs /ipk - manual activation
+
+==
+
+Unifi:
+
+sudo syswrapper.sh restore-default
+set-inform conroller-ip
+
+
+ipconfig /all | find /i “DHCP Server"
+ipconfig /all | find /i “Server"
+
+
+== Restore Points ==
+To create restore point:
+Wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "My Restore Point", 100, 12
+
+To show previous restore points:
+vssadmin List Shadows
+==
+
+== File Share ==
+net share mark=c:\Users\mlampe /GRANT:Everyone,FULL
+==
