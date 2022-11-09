@@ -1,1 +1,1 @@
-
+echo Press any key to completely reset your NIC config && echo Please make sure to document previous settings before doing this && pause && ipconfig /flushdns && netsh int ip reset c:\resetlog.txt && netsh int ip reset && netsh advfirewall reset netsh interface ipv4 reset && netsh interface ipv6 reset && netsh interface tcp reset && netsh int reset all && netsh winsock reset && ipconfig /flushdns && pause && echo do you want to restart your computer? && pause && shutdown -s -t 030
