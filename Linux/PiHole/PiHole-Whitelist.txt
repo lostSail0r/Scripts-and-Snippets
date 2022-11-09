@@ -1,0 +1,92 @@
+pihole -w clients4.google.com 
+pihole -w clients2.google.com
+pihole -w s.youtube.com 
+pihole -w video-stats.l.google.com
+pihole -w www.googleapis.com 
+pihole -w youtubei.googleapis.com
+pihole -w oauthaccountmanager.googleapis.com
+pihole -w googleapis.l.google.com
+pihole -w redirector.gvt1.com
+pihole -w www.msftncsi.com
+pihole -w outlook.office365.com products.office.com c.s-microsoft.com i.s-microsoft.com login.live.com login.microsoftonline.com
+pihole -w dl.delivery.mp.microsoft.com geo-prod.do.dsp.mp.microsoft.com displaycatalog.mp.microsoft.com
+pihole -w sls.update.microsoft.com.akadns.net fe3.delivery.dsp.mp.microsoft.com.nsatc.net tlu.dl.delivery.mp.microsoft.com
+pihole -w msedge.api.cdp.microsoft.com
+pihole -w clientconfig.passport.net
+pihole -w v10.events.data.microsoft.com
+pihole -w v20.events.data.microsoft.com
+pihole -w client-s.gateway.messenger.live.com
+pihole -w s.gateway.messenger.live.com client-s.gateway.messenger.live.com ui.skype.com pricelist.skype.com apps.skype.com m.hotmail.com sa.symcb.com s{1..5}.symcb.com
+pihole -w officeclient.microsoft.com
+pihole -w itunes.apple.com
+pihole -w s.mzstatic.com
+pihole -w appleid.apple.com
+pihole -w gsp-ssl.ls.apple.com
+pihole -w gsp-ssl.ls-apple.com.akadns.net
+pihole -w api-tv.spotify.com
+pihole -w spclient.wg.spotify.com apresolve.spotify.com
+pihole -w gravatar.com # custom login pictures
+pihole -w thetvdb.com # metadata for tv series
+pihole -w themoviedb.com # metadata for movies
+pihole -w chtbl.com # iHeart radio/Plex Podcast
+pihole -w plex.tv tvdb2.plex.tv pubsub.plex.bz proxy.plex.bz proxy02.pop.ord.plex.bz cpms.spop10.ams.plex.bz meta-db-worker02.pop.ric.plex.bz meta.plex.bz tvthemes.plexapp.com.cdn.cloudflare.net tvthemes.plexapp.com 106c06cd218b007d-b1e8a1331f68446599e96a4b46a050f5.ams.plex.services meta.plex.tv cpms35.spop10.ams.plex.bz proxy.plex.tv metrics.plex.tv pubsub.plex.tv status.plex.tv www.plex.tv node.plexapp.com nine.plugins.plexapp.com staging.plex.tv app.plex.tv o1.email.plex.tv  o2.sg0.plex.tv dashboard.plex.tv
+pihole -w gfwsl.geforce.com
+pihole -w dl.dropboxusercontent.com ns1.dropbox.com ns2.dropbox.com
+pihole -w styles.redditmedia.com
+pihole -w www.redditstatic.com
+pihole -w reddit.map.fastly.net
+pihole -w www.redditmedia.com
+pihole -w reddit-uploaded-media.s3-accelerate.amazonaws.com
+pihole --white-regex [a-z]\.thumbs\.redditmedia\.com
+pihole --white-regex (\.|^)redd\.it$
+pihole --white-regex (\.|^)reddit\.com$
+pihole -w tracking-protection.cdn.mozilla.net
+pihole -w ud-chat.signal.org
+pihole -w chat.signal.org
+pihole -w storage.signal.org
+pihole -w signal.org
+pihole -w www.signal.org
+pihole -w updates2.signal.org
+pihole -w textsecure-service-whispersystems.org
+pihole -w giphy-proxy-production.whispersystems.org
+pihole -w cdn.signal.org
+pihole -w whispersystems-textsecure-attachments.s3-accelerate.amazonaws.com
+pihole -w d83eunklitikj.cloudfront.net
+pihole -w souqcdn.com
+pihole -w cms.souqcdn.com
+pihole -w api.directory.signal.org
+pihole -w contentproxy.signal.org
+pihole -w turn1.whispersystems.org
+pihole -w twitter.com
+pihole -w upload.twitter.com
+pihole -w api.twitter.com
+pihole -w mobile.twitter.com
+pihole --white-regex (\.|^)twimg\.com$
+pihole -w v10.events.data.microsoft.com
+pihole -w gfwsl.geforce.com
+pihole -w settings-win.data.microsoft.com
+pihole -w v10.vortex-win.data.microsoft.com
+pihole -w v20.vortex-win.data.microsoft.com
+pihole -w dynaimage.cdn.turner.com
+pihole --white-wild cgfixit.com
+pihole --white-wild cgfixit.club
+pihole -w ctldl.windowsupdate.com
+pihole -w displaycatalog.mp.microsoft.com
+pihole -w dl.delivery.mp.microsoft.com
+pihole -w sls.update.microsoft.com
+pihole -w geo-prod.do.dsp.mp.microsoft.com
+pihole --white-wild force.com
+pihole -w vee.am
+pihole --white-wild veeam.com
+pihole --white-wild lightning.com
+pihole -w salesforce.com
+pihole -w veeam.webex.com
+pihole -w msedge.net
+pihole -w msedge.net
+
+
+
+
+#pihole -w captive.apple.com gsp1.apple.com www.apple.com www.appleiphonecell.com
+#pihole -w msftncsi.com www.msftncsi.com ipv6.msftncsi.com
+#pihole -w connectivitycheck.android.com android.clients.google.com clients3.google.com connectivitycheck.gstatic.com
