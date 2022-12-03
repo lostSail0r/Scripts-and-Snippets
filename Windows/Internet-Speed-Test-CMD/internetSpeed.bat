@@ -2,4 +2,4 @@
 @echo off
 
 
-python speedtest_cli.py & exit
+python speedtest.py & exit
